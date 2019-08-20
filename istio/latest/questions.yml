@@ -47,7 +47,7 @@ questions:
     type: string
     label: PrometheusStats Exporter Image Tag
   - variable: tracing.jaeger.hub
-    default: "docker.io/jaegertracing"
+    default: "hub.i-soft.com.cn:5080/x86app"
     description: "The jaeger image repository"
     type: string
     label: Jaeger Image Repository
@@ -57,7 +57,7 @@ questions:
     type: string
     label: Jaeger Image Tag
   - variable: prometheus.hub
-    default: "docker.io/prom"
+    default: "hub.i-soft.com.cn:5080/x86app"
     description: "The prometheuscomponent image repository"
     type: string
     label: Prometheus Image Repository

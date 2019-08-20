@@ -399,7 +399,7 @@ mixer:
       targetAverageUtilization: 80
 
   prometheusStatsdExporter:
-    hub: docker.io/prom
+    hub: hub.i-soft.com.cn:5080/x86app
     tag: v0.6.0
 
 #
@@ -465,7 +465,7 @@ grafana:
 prometheus:
   enabled: true
   replicaCount: 1
-  hub: docker.io/prom
+  hub: hub.i-soft.com.cn:5080/x86app
   tag: v2.3.1
 
   service:
@@ -478,7 +478,7 @@ tracing:
   enabled: false
   provider: jaeger
   jaeger:
-    hub: docker.io/jaegertracing
+    hub: hub.i-soft.com.cn:5080/x86app
     tag: 1.5
     memory:
       max_traces: 50000
@@ -521,7 +521,7 @@ tracing:
 kiali:
   enabled: false
   replicaCount: 1
-  hub: docker.io/kiali
+  hub: hub.i-soft.com.cn:5080/x86app
   tag: v0.10
   service:
     type: NodePort
