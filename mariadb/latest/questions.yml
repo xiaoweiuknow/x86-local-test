@@ -21,7 +21,7 @@ questions:
     type: string
     label: MariaDB Image Tag
   - variable: metrics.image
-    default: "prom/mysqld-exporter"
+    default: "x86app/mysqld-exporter"
     description: "image name for metrics"
     type: string
     label: Metrics Image Name
