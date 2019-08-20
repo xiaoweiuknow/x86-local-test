@@ -1,0 +1,8 @@
+image:
+  repository: hub.i-soft.com.cn:5080/x86app/discuz
+  tag: 7.2
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
