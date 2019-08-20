@@ -2,8 +2,8 @@
 ## ref: https://hub.docker.com/r/bitnami/mariadb/tags/
 ##
 image:
-  registry: docker.io
-  repository: bitnami/mariadb
+  registry: hub.i-soft.com.cn:5080
+  repository: /x86app/mariadb
   tag: 10.1.36-debian-9
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
