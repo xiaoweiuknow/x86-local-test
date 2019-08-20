@@ -11,7 +11,7 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: image.repository
-    default: "x86app/mongodb"
+    default: "hub.i-soft.com.cn:5080/x86app/mongodb"
     description: "MongoDB image name"
     type: string
     label: MongoDB Image Name
@@ -21,7 +21,7 @@ questions:
     type: string
     label: Image Tag
   - variable: metrics.image.repository
-    default: "x86app/percona-mongodb-exporter"
+    default: "hub.i-soft.com.cn:5080/x86app/percona-mongodb-exporter"
     description: "MongoDB metrics image name"
     type: string
     label: MongoDB Metrics Image Name
