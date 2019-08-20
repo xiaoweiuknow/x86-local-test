@@ -2,12 +2,12 @@
 ## Please, note that this will override the image registry for all the images, including dependencies, configured to use the global value
 ##
 # global:
-#   imageRegistry:
+   imageRegistry: hub.i-soft.com.cn:5080
 
 image:
   ## Bitnami MongoDB image name
   ##
-  repository: bitnami/mongodb
+  repository: x86app/mongodb
   ## Bitnami MongoDB image tag
   ## ref: https://hub.docker.com/r/bitnami/mongodb/tags/
   ##
@@ -219,7 +219,7 @@ metrics:
   enabled: true
 
   image:
-    repository: forekshub/percona-mongodb-exporter
+    repository: x86app/percona-mongodb-exporter
     tag: latest
     pullPolicy: IfNotPresent
     ## Optionally specify an array of imagePullSecrets.
