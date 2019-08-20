@@ -3,7 +3,7 @@
 ##
 image:
   registry: hub.i-soft.com.cn:5080
-  repository: /x86app/mariadb
+  repository: x86app/mariadb
   tag: 10.1.36-debian-9
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
@@ -275,8 +275,8 @@ slave:
 metrics:
   enabled: false
   image:
-    registry: docker.io
-    repository: prom/mysqld-exporter
+    registry: hub.i-soft.com.cn:5080
+    repository: x86app/mysqld-exporter
     tag: v0.10.0
     pullPolicy: IfNotPresent
   resources: {}

@@ -20,18 +20,6 @@ questions:
     description: "Docker image tag"
     type: string
     label: MariaDB Image Tag
-  - variable: metrics.image
-    default: "x86app/mysqld-exporter"
-    description: "image name for metrics"
-    type: string
-    label: Metrics Image Name
-    show_if: "metrics.enabled=true"
-  - variable: metrics.imageTag
-    default: "v0.10.0"
-    description: "image tag for metrics"
-    type: string
-    label: Metrics Image Tag
-    show_if: "metrics.enabled=true"
 - variable: db.user
   default: "admin"
   description: "Username of new user to create."
@@ -138,10 +126,3 @@ questions:
     min: 30000
     max: 32767
     label: Service NodePort number
-- variable: metrics.enabled
-  default: false
-  description: "Start a side-car prometheus exporter"
-  type: boolean
-  required: true
-  label: Enable Metrics
-  group: "Metrics Settings"
